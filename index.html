@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangelion Project</title>
+    <link rel="stylesheet" href="Aset\Css\style.css">
+    <link rel="stylesheet" href="Aset\Css\loading.css">
+    <link rel="shortcut icon" href="Aset\Evangelion.png" type="image/x-icon">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div class="loader">
+            <img src="Aset\Evangelion.png" alt="Neon Genesis Evangelion Logo">
+            <div class="rectangle-loader">
+                <div class="fill"></div>
+            </div>
+            <div class="loading-text">Loading...</div>
+        </div>
+    </div>
+
+    <video id="video-background" autoplay muted loop>
+        <!-- Ganti 'video.mp4' dengan nama file video Anda -->
+        <source src="Aset/evangelion-unit02-neon-genesis-evangelion-moewalls-com.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div id="start" style="display: none;">
+        <h1>Welcome To </h1> <h1 style="color:red">Evangelion</h1> <h1> Project</h1>
+        <a href="Rei.html" id="start-button">START</a>
+    </div>
+
+    <script src="Aset\Js\loading.js"></script>
+</body>
+</html>

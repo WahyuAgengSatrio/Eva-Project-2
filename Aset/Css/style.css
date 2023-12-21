@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Times New Roman Condensed Bold';
+    src: url('Aset/Times-New-Roman-MT-Std-Bold-Condensed.otf') format('opentype');
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    font-family: 'Times New Roman Condensed Bold', Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background 0.5s ease-in-out;
+    
+}
+
+#nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#nav-container.show-nav {
+    opacity: 1;
+}
+
+.nav-button {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    background: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background 0.3s ease, opacity 0.3s ease, transform 0.3s ease; /* Tambahkan transisi untuk background, opacity, dan transform */
+
+    
+}
+
+.nav-button:hover {
+    /* ... */
+    opacity: 0.9; /* Contoh perubahan opacity pada hover */
+    transform: scale(1.1); /* Contoh perubahan transform pada hover */
+}
+
+.nav-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.nav-button:hover img {
+    transform: scale(1.2);
+}
+
+#content {
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: background 0.3s ease-in-out;
+}
+
+#content:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#content-container {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#content-container.hide-content {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events when hidden */
+}
+
+#pageTitle {
+    color: #fff;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 23, 23, 0.078);
+    box-shadow: 0 4px 4px 6px rgba(255, 0, 0, 0.487);
+    transition: background 0.3s ease-in-out;
+}
+
+#start:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#start-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    color: black;
+}
